@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Usando uma fonte diferente */
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    /* Gradiente de fundo */
+    background: linear-gradient(to right, #6a79ce, #e2e8f0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px; /* Aumentando o padding */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    text-align: center;
+    max-width: 400px; /* Aumentando a largura máxima */
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;/*mexer no h1 para cima*/
+    font-size: 24px; /* Aumentando o tamanho da fonte */
+}
+
+label {
+    display: block;/*é frequentemente usado em containers ou elementos estruturais e Precisa que os elementos apareçam um abaixo do outro (em blocos*/
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px; /* Aumentando o padding */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bordas mais arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input:focus, select:focus {
+    border-color: #007bff; /* Mudando a cor da borda ao focar */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;/*aplica negrito ao texto. Isso significa que o texto ficará com um peso de fonte mais espesso.*/
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s; /* Transições para o botão */
+}
+/*hover altera o estilo de um elemento quando ele é interagido com o mouse. Isso cria uma interação visual com o usuário.*/
+button:hover  {
+    background-color: #16ad6e;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+/*Se usa o # quando se quer puxar um elemento do html para o css*/
+#resultado {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}  
